@@ -90,3 +90,32 @@ const yearUntilRetirement = function (birthYear, firstName) {
 }
 console.log(yearUntilRetirement(1987, 'szymi'));
 console.log(yearUntilRetirement(1950, 'mati'));
+
+
+const friends = ['michael', 'steven', 'peter'];
+console.log(friends);
+
+const years2 = new Array(1991, 1984, 1984, 2004, 2020);
+
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'jay';
+console.log(friends);
+
+const jonas = ['jonas', 'szmit', 2021 - 1991, 'teacher', friends];
+console.log(jonas);
+
+
+const calcAge2 = function (birthYear) {
+    return 2021 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge2(years[0]);
+const age2 = calcAge2(years[1]);
+const age3 = calcAge2(years[years.length - 1]);
+console.log(age1, age2, age3);
+const allAges = [age1, age2, age3];
+console.log(allAges);
