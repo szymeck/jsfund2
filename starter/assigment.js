@@ -48,3 +48,14 @@ const checkWinner = function (scored1, scored2, scored3, scorek1, scorek2, score
 }
 const winnerData1 = checkWinner(42, 23, 71, 65, 54, 49);
 const winnerData2 = checkWinner(85, 54, 41, 23, 34, 27);
+
+const populations = [39, 60, 200, 300];
+console.log(populations.length === 4);
+const percentages = [(populations[0] / 7900 * 100), (populations[1] / 7900 * 100), (populations[2] / 7900 * 100), (populations[3] / 7900 * 100)];
+console.log(percentages);
+
+const populations2 = [10, 20, 30, 40, 50];
+console.log(populations2.length === 4);
+
+const percentages2 = [percentageOfWorld1(populations2[0]), percentageOfWorld1(populations2[1]), percentageOfWorld1(populations2[2]), percentageOfWorld1(populations2[3]), percentageOfWorld1(populations2[4])];
+console.log(percentages2);
