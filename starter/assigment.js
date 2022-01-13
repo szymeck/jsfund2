@@ -59,3 +59,51 @@ console.log(populations2.length === 4);
 
 const percentages2 = [percentageOfWorld1(populations2[0]), percentageOfWorld1(populations2[1]), percentageOfWorld1(populations2[2]), percentageOfWorld1(populations2[3]), percentageOfWorld1(populations2[4])];
 console.log(percentages2);
+
+const neighbours = ['belarus', 'germany', 'france'];
+neighbours.push('utopia');
+neighbours.pop();
+
+if (neighbours.includes('germany')) {
+    console.log('You are in center of Europe');
+}
+else {
+    console.log('not in central Europe');
+};
+
+neighbours[1] = 'Republic of germany';
+
+console.log(neighbours);
+
+// const bill = 430;
+// const tip = (bill >= 50 && bill <= 300) ? (bill * (15 / 100)) : (bill * (20 / 100));
+// console.log(`The bill was${bill}, the tip was ${tip} and the total value is ${bill + tip}`);
+
+
+const calcTip = function (bill) {
+    const tip = (bill >= 50 && bill <= 300) ? (bill * (15 / 100)) : (bill * (20 / 100));
+    return tip;
+};
+console.log(calcTip(100));
+
+const bills = [125, 555, 44];
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+console.log(tips);
+
+const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])];
+console.log(total);
+
+const myCountry = {
+    country: 'poland',
+    capital: 'warsaw',
+    language: 'polish',
+    population: 39,
+    neighbours: 3,
+};
+myCountry.population = (myCountry.population + 2);
+myCountry['population'] = (myCountry.population + 2);
+
+console.log(`${myCountry.country} has ${myCountry.population} milion ${myCountry.language}-speaking people, ${myCountry.neighbours} neigbours contries and a capital called ${myCountry.capital} `);
+
